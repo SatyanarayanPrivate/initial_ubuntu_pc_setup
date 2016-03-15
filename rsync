@@ -1,0 +1,40 @@
+
+
+
+
+-------- Forwarded Message --------
+Subject:         rsync
+Date:         Fri, 20 Feb 2015 12:37:26 +0530
+From:         Amit Sadaphule <amit@koperadev.com>
+Reply-To:         amit@koperadev.com
+To:         amar@koperadev.com
+
+
+
+- create a file /etc/rsyncd.conf on source system
+
+uid = root
+gid = root
+use chroot = yes
+max connections = 10
+port=823
+syslog facility = local5
+pid file = /run/rsyncd.pid
+
+[<name_of_share>]
+         path=<path of folder to be copied>
+         read only=false
+
+- enable rsync daemon flag (in file "/etc/default/rsync", change 
+"RSYNC_ENABLE=true" from "RSYNC_ENABLE=false") and restart rsync as:
+     service rsync stop
+     service rsync start
+
+- On destination system
+     rsync -aXPvz --delete --force --numeric-ids --port=823 
+<destination_path>/ <ip address of source>::<name_of_share>/
+
+
+
+
+
