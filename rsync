@@ -1,16 +1,4 @@
 
-
-
-
--------- Forwarded Message --------
-Subject:         rsync
-Date:         Fri, 20 Feb 2015 12:37:26 +0530
-From:         Amit Sadaphule <amit@koperadev.com>
-Reply-To:         amit@koperadev.com
-To:         amar@koperadev.com
-
-
-
 - create a file /etc/rsyncd.conf on source system
 
 uid = root
