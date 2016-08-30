@@ -15,8 +15,11 @@ sudo apt-get install gparted --force-yes --yes
 
 echo "============================= 2 :: editors ============================="
 sudo apt-get install vim exuberant-ctags meld xmlcopyeditor bless  --force-yes --yes
+sudo apt-get install kate --force-yes --yes
 
 echo "============================= 3 :: dev tools ================================"
+sudo apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf --force-yes --yes
+sudo apt-get install g++-5-arm-linux-gnueabi g++-5-arm-linux-gnueabihf --force-yes --yes
 sudo apt-get -y  install ia32-libs-multiarch
 sudo apt-get -y  install gettext
 sudo apt-get -y  install libgtk2.0-dev
