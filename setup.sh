@@ -16,6 +16,7 @@ sudo apt-get install gparted --force-yes --yes
 echo "============================= 2 :: editors ============================="
 sudo apt-get install vim exuberant-ctags meld xmlcopyeditor bless  --force-yes --yes
 sudo apt-get install kate --force-yes --yes
+sudo apt-get install cscope --force-yes --yes
 
 echo "============================= 3 :: dev tools ================================"
 sudo apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf --force-yes --yes
