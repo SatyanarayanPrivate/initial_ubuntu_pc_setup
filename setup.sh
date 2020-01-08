@@ -53,6 +53,7 @@ sudo apt-get -y  install cmake
 sudo apt-get -y  install libevent-2.0-5 libevent-core-2.0-5 libevent-openssl-2.0-5 libevent-pthreads-2.0-5 libevent-dev
 sudo apt-get -y  install libiw-dev
 sudo apt-get -y  install mosquitto mosquitto-clients python-mosquitto libmosquitto0-dev
+sudo apt-get -y  install socat 
 
 echo "============================= 4 :: git ======================================" 
 sudo apt-get install git-core gitg  --force-yes --yes
