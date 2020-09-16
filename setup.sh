@@ -54,6 +54,7 @@ sudo apt-get -y  install libevent-2.0-5 libevent-core-2.0-5 libevent-openssl-2.0
 sudo apt-get -y  install libiw-dev
 sudo apt-get -y  install mosquitto mosquitto-clients python-mosquitto libmosquitto0-dev
 sudo apt-get -y  install socat 
+sudo apt-get install kdevelop
 
 echo "============================= 4 :: git ======================================" 
 sudo apt-get install git-core gitg  --force-yes --yes
@@ -134,6 +135,11 @@ sudo apt-get install zlibc
 sudo apt-get install texinfo
 sudo apt-get install autoconf
 
+echo "============================= 11 :: for xfce ============================="
+sudo apt install xfce4 --force-yes --yes
+sudo apt install xubuntu-desktop --force-yes --yes
+sudo apt-get install indicator-cpufreq --force-yes --yes
+sudo apt-get install indicator-multiload --force-yes --yes
 
 
 
